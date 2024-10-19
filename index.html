@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <!-- css links  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" /> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href='css/navbar.css'>
+    <link rel="stylesheet" href='css/slider.css'>
+    <link rel="stylesheet" href='css/style.css'>
+    <link rel="stylesheet" href='css/services.css'>
+    <link rel="stylesheet" href='css/Technology.css'>
+    <link rel="stylesheet" href='css/ChooseUs.css'>
+    <link rel="stylesheet" href='css/Partners.css'>
+    <link rel="stylesheet" href='css/Card.css'>
+    <link rel="stylesheet" href='css/Blog.css'>
+    <link rel="stylesheet" href='css/Contact.css'>
+    <link rel="stylesheet" href='css/Team.css'>
+    <link rel="stylesheet" href='css/Footer.css'>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <img src="Images/logo.png" alt="Logo" class="logo-image">
+
+        <!-- Search box -->
+        <input type="text" placeholder="Search" class="search-box">
+
+        <!-- Navigation Links -->
+        <div class="items">
+            <a href="#" class="item">Home</a>
+            <a href="#" class="item">About</a>
+            <a href="#" class="item">Services</a>
+            <a href="#" class="item">Blog</a>
+            <a href="#" class="item">Contact Us</a>
+            <a href="#" class="item">Testimonials</a>
+            <a href="#"><button class="menu-button">Get Started</button></a>
+        </div>
+       
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+            <img src="Images/menu.png" alt="Menu Icon" class="menu-icon" id="menu-icon">
+        </button>
+    </div>
+
+   
+<!-- slider  -->
+     <div class="slider">
+        <div class="slider-wrapper">
+            <div class="slide">
+                <video src="Images\video2.mp4" autoplay loop muted>
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="slide">
+                <video src="Images\video.mp4" autoplay loop muted>
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="background"></div>
+        <div class="text-content">
+            <h1 id="slide-heading">Invent Model provides You Better solution</h1>
+            <a id="slide-button-link" href="#">
+                <button class="explore-btn" id="slide-button-text">Explore more</button>
+            </a>
+        </div>
+        <button class="slider-button left" id="prevButton1">
+            <img src="Images/left icon.png" class="left-img" alt="left-icon">
+        </button>
+        <button class="slider-button right" id="nextButton1">
+            <img src="Images/right icon.png" class="right-img" alt="right-icon">
+        </button>
+    </div>
+ <!-- services  -->
+ <section class="services-section" >
+    <h2  data-aos="fade-down">Our Services</h2>
+    <div class="services-container">
+        <div class="service-box" data-aos="fade-down">
+            <div class="service-content">
+                <img src="Images/data-governance.png" alt="Data Governance">
+                <h3>Data Governance</h3>
+                <p class="description">Numentica's Data Governance Practice enables organizations to leverage data effectively. We employ best practices to establish a mission-aligned Data Governance Framework and Operating.</p>
+            </div>
+        </div>
+        <div class="service-box" data-aos="fade-down">
+            <div class="service-content">
+                <img src="Images/data-engineering.png" alt="Data Engineering">
+                <h3>Data Engineering</h3>
+                <p class="description">Data engineering involves building systems to facilitate data collection and utilization, enabling reliable, swift, and secure access for analysts, data scientists, and executives.</p>
+            </div>
+        </div>
+        <div class="service-box" data-aos="fade-down">
+            <div class="service-content">
+                <img src="Images/business-intelligence.png" alt="Business Intelligence">
+                <h3>Business Intelligence</h3>
+                <p class="description">Business Intelligence (BI) provides targeted analysis for business queries, aiding in decision-making and planning. Implementing BI offers benefits such as improved analysis and a competitive advantage.</p>
+            </div>
+        </div>
+        <div class="service-box" data-aos="fade-down">
+            <div class="service-content">
+                <img src="Images/data-analysis.png" alt="Data Analytics">
+                <h3>Data Analytics</h3>
+                <p class="description">Data Analytics is the scientific process of analyzing raw data to gain insights and make informed decisions. Our team of Data Analytics experts assists organizations.</p>
+            </div>
+        </div>
+        <div class="service-box" data-aos="fade-down">
+            <div class="service-content">
+                <img src="Images/cloud-data.png" alt="Cloud Data Strategy">
+                <h3>Cloud Data Strategy</h3>
+                <p class="description">Numentica enables your organization to harness the potential of data assets, align data management practices with business goals, and steer data-driven business.</p>
+            </div>
+        </div>
+        <div class="service-box" data-aos="fade-down">
+            <div class="service-content">
+                <img src="Images/master-data.png" alt="Master Data Management">
+                <h3 class="MDM">Master Data Management</h3>
+                <p class="description">Managed Data Services involve outsourcing tasks to experts, aiming to reduce costs and enhance service quality for businesses. Our team specializes in developing an agile approach.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Technology  -->
+<div class="tools-container" >
+    <h2 class="title" data-aos="fade-down">Tools & Technology</h2>
+
+    <div class="slider" data-aos="fade-down">
+        <div id="slide" class="grid-container" data-aos="fade-down"></div></div>
+
+        <div class="slider-controls" data-aos="fade-down">
+            <button id="prevButton" class="prev-button disabled" >Previous</button>
+            <button id="nextButton" class="next-button" >Next</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- chooseUs  -->
+<section class="why-choose-us" data-aos="fade-down">
+    <h2>Why Choose Us?</h2>
+    
+    <div class="image-container">
+        <img src="Images/choose.jpg" alt="Team collaboration" class="background-image" />
+        <div class="choose-bg"></div>
+        
+        <div class="overlay" data-aos="fade-down">
+            <div class="gray-box">
+                <img src="Images/use-case.png" alt="Seamless Workflows Icon" />
+                <h2>Seamless <br/>Workflows</h2>
+                <p>From insights to innovation, path to interoperable enterprise starts here.</p>
+            </div>
+            <div class="gray-box">
+                <img src="Images/proficiency.png" alt="Enhanced Experience Icon" />
+                <h2>Enhanced <br/>Experience</h2>
+                <p>Creating the best customer experience across different ecosystems.</p>
+            </div>
+            <div class="gray-box">
+                <img src="Images/expert-system.png" alt="Technology Experts Icon" />
+                <h2>Technology <br/> Experts</h2>
+                <p>Bringing ease, accuracy & scalability to medical billing & claims with smart IT innovation.</p>
+            </div>
+            <div class="gray-box">
+                <img src="Images/settlement.png" alt="Higher Claim Settlements Icon" />
+                <h2>Higher Claim<br/> Settlements</h2>
+                <p>Helping you stay ahead of change with our decades of Tech expertise.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Our Partners -->
+<div class="company-container">
+    <h2 class="company-title">Our Partners</h2>
+    <div class="marquee-container">
+      <div class="marquee-item">
+        <img src="Images/company1.png" alt="Logo 1">
+        <img src="Images/company2.png" alt="Logo 2">
+        <img src="Images/company3.png" alt="Logo 3">
+        <img src="Images/company4.png" alt="Logo 4">
+        <img src="Images/company5.png" alt="Logo 5">
+        <img src="Images/company6.png" alt="Logo 6">
+        <!-- Duplicate images for seamless scroll -->
+        <img src="Images/company1.png" alt="Logo 1">
+        <img src="Images/company2.png" alt="Logo 2">
+        <img src="Images/company3.png" alt="Logo 3">
+        <img src="Images/company4.png" alt="Logo 4">
+        <img src="Images/company5.png" alt="Logo 5">
+        <img src="Images/company6.png" alt="Logo 6">
+        <img src="Images/company1.png" alt="Logo 1">
+        <img src="Images/company2.png" alt="Logo 2">
+        <img src="Images/company3.png" alt="Logo 3">
+        <img src="Images/company4.png" alt="Logo 4">
+        <img src="Images/company5.png" alt="Logo 5">
+        <img src="Images/company6.png" alt="Logo 6">
+      </div>
+    </div>
+  </div>
+  <!-- our clients Says -->
+  
+  <div class="swiper-container">
+    <h2 class="heading">Our Clients Say!!!</h2>
+    <div class="swiper-content">
+        <div class="swiper">
+            <div class="swiper-wrapper" id="swiper-wrapper">
+                <!-- Slides will be inserted here dynamically -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Team member -->
+<div class="leadership-team">
+    <h2>Our Leadership Team</h2>
+    <div class="leadership-grid" id="leadershipGrid"></div>
+</div>
+
+
+<!-- Blog -->
+ <div class="blog-wrapper">
+<h1 class="blog-heading">Recent Posts</h1>
+    <div class="blog-container">
+        <div class="blog-slider">
+            <div class="blog">
+                <img src="Images/iit.png" alt="Team Meeting">
+                <div class="blog-content">
+                    <h2>Python1</h2>
+                    <p>Our vision is to provide best IT services globally.</p>
+                    <div class="author">
+                        <div class="author-info">
+                            <span>john David</span>
+                            <span>Jan 2, 2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <img src="Images/iit.png" alt="Team Meeting">
+                <div class="blog-content">
+                    <h2>Python2</h2>
+                    <p>Our vision is to provide best IT services globally.</p>
+                    <div class="author">
+                        <div class="author-info">
+                            <span>john David</span>
+                            <span>Jan 2, 2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <img src="Images/iit.png" alt="Team Meeting">
+                <div class="blog-content">
+                    <h2>Python3</h2>
+                    <p>Our vision is to provide best IT services globally.</p>
+                    <div class="author">
+                        <div class="author-info">
+                            <span>john David</span>
+                            <span>Jan 2, 2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <img src="Images/iit.png" alt="Team Meeting">
+                <div class="blog-content">
+                    <h2>Python4</h2>
+                    <p>Our vision is to provide best IT services globally.</p>
+                    <div class="author">
+                        <div class="author-info">
+                            <span>john David</span>
+                            <span>Jan 2, 2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <img src="Images/iit.png" alt="Team Meeting">
+                <div class="blog-content">
+                    <h2>Python5</h2>
+                    <p>Our vision is to provide best IT services globally.</p>
+                    <div class="author">
+                        <div class="author-info">
+                            <span>john David</span>
+                            <span>Jan 2, 2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <img src="Images/iit.png" alt="Team Meeting">
+                <div class="blog-content">
+                    <h2>Python6</h2>
+                    <p>Our vision is to provide best IT services globally.</p>
+                    <div class="author">
+                        <div class="author-info">
+                            <span>john David</span>
+                            <span>Jan 2, 2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    </div>
+
+
+
+<!-- Contact Us -->
+<div class="contact-wrapper">
+    <h1>Contact Us</h1>
+    <div class="contact-container">
+        <div class="info-section">
+            <div class="info-block">
+                <div class="icon"><i class="fa-solid fa-location-crosshairs"></i></div>
+                <h3>Address</h3>
+                <p>A-1405, Tower-T3<br />NX-One, Greater Noida</p>
+            </div>
+            <div class="info-block">
+                <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                <h3>Call Us</h3>
+                <p>+1 5589 55488 55<br />+1 6678 254445 41</p>
+            </div>
+            <div class="info-block">
+                <div class="icon"><i class="fa-duotone fa-solid fa-envelope"></i></div>
+                <h3>Email Us</h3>
+                <p>info@example.com<br />contact@example.com</p>
+            </div>
+            <div class="info-block">
+                <div class="icon">&#x23F3;</div>
+                <h3>Open Hours</h3>
+                <p>Monday - Friday<br />9:00AM - 05:00PM</p>
+            </div>
+        </div>
+        <div class="form-section">
+            <form id="contactForm">
+                <div class="input-row">
+                    <input type="text" placeholder="Your Name" class="input-half" required />
+                    <input type="email" placeholder="Your Email" class="input-half" required />
+                </div>
+                <input type="text" placeholder="Subject" class="input-full" required />
+                <textarea placeholder="Message" class="input-full" required></textarea>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section company">
+            <h2>Company</h2>
+            <ul>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="/reservation">Reservation</a></li>
+                <li><a href="/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/terms-condition">Terms & Condition</a></li>
+            </ul>
+        </div>
+        <div class="footer-section company">
+            <h2>Company</h2>
+            <ul>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="/reservation">Reservation</a></li>
+                <li><a href="/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/terms-condition">Terms & Condition</a></li>
+            </ul>
+        </div>
+        <div class="footer-section company">
+            <h2>Company</h2>
+            <ul>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="/reservation">Reservation</a></li>
+                <li><a href="/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/terms-condition">Terms & Condition</a></li>
+            </ul>
+        </div>
+        <div class="footer-section help">
+            <h2>Need Help? Get in Touch</h2>
+            <p>Have questions about teaching and career opportunities?</p>
+            <div class="newsletter-input">
+                <input type="email" placeholder="Your email" />
+                <button>SIGNUP</button>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="footer-icon" onclick="openLink('https://facebook.com')"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="footer-icon" onclick="openLink('https://twitter.com')"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="footer-icon" onclick="openLink('https://instagram.com')"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="footer-icon" onclick="openLink('https://linkedin.com')"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© Copyright 2024 | +91 98219 31210 | @Support</p>
+        <p>Corporate office address - A-1405, Tower-T3, NX-One, Plot No. 17, Tech Zone - 4, Greater Noida West, Uttar Pradesh 201306</p>
+    </div>
+</footer>
+
+<!-- javascript files  -->
+<script src="js/Footer.js"></script>
+<script src="js/Contact.js"></script>
+<script src="js/Blog.js"></script>
+<script src="js/Team.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/Card.js"></script>
+<script src="js/Partners.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+<script src="js/ChooseUs.js"></script>
+<script src="js/Technology.js"></script>
+<script src="js/services.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/navbar.js"></script>
+
+</body>
+</html>

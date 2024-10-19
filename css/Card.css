@@ -1,0 +1,102 @@
+/* Card styling */
+.card {
+    margin: 0 4rem;
+    position: relative;
+    width: 30rem;
+    width: 100%;
+    cursor: pointer;
+    border: 5px solid rgb(252, 234, 213);
+    background-color: #1E3E62;
+    height: 15rem;
+    text-align: center;
+    padding: 8px 6px;
+    align-self: center;
+    transition: all 0.5s ease 0.1s;
+}
+
+.swiper-content {
+    height: 60vh;
+    background-color: white;
+    color: #FFEBD4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-icon {
+    font-size: 5rem;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: #FFEBD4;
+}
+
+.testimonial-text {
+    margin-top: 3rem;
+    color: whitesmoke;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.client-info {
+    margin-top: 1.5rem;
+    gap: 0.5rem;
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+}
+
+.client-photo {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: black;
+    margin-right: 0.5rem;
+}
+
+.client-name {
+    font-weight: bold;
+}
+
+.client-profession {
+    margin-top: 0.24rem;
+    font-size: 0.875rem;
+    color: whitesmoke;
+}
+
+.heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: black;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+/* Responsive adjustments */
+@media (min-width: 800px) {
+    .swiper-content {
+        height: 60vh;
+        width: 100%;
+    }
+    .card {
+        height: 250px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 799px) {
+    .swiper-content {
+        height: auto;
+        justify-content: center;
+        padding: 1rem;
+    }
+    .card {
+        width: 100%;
+        margin: 0;
+    }
+    .card-container {
+        height: 20rem;
+        display: flex;
+        justify-content: center;
+    }
+}

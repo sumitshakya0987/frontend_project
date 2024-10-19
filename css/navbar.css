@@ -1,0 +1,174 @@
+/* General Navbar Styling */
+.navbar {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    border-bottom: 1px solid black;
+}
+
+.logo-image {
+    height: 40px;
+    width: 150px;
+    margin: 3px;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.search-box {
+    margin-left: 5rem;
+    margin-top: 0.3rem;
+    padding-left: 2rem;
+    width: 20rem;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+/* Navigation Menu Styling */
+.items {
+    display: flex;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+.item {
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+    font-size: medium;
+    padding-top: 10px;
+}
+
+.item:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+/* Button Styling */
+.button, .menu-button {
+    border: 1px solid rgb(53, 53, 151);
+    background-color: rgb(53, 53, 151);
+    padding: 12px;
+    width: 130px;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+}
+
+.button:hover, .menu-button:hover {
+    background-color: white;
+    color: rgb(53, 53, 151);
+    font-weight: bold;
+    border: 2px solid rgb(53, 53, 151);
+    transition: 300ms ease-in-out;
+}
+
+/* Mobile Menu Styling */
+.mobile-menu-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Mobile Menu Icon Styling */
+.menu-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+@media (max-width: 1200px) {
+    .search-box {
+        margin-left: 2.5rem;
+        margin-top: 0.3rem;
+        padding-left: 2rem;
+        width: 13rem;
+        height: 40px;
+        border-radius: 50px;
+        border: 1px solid black;
+    }
+    
+    /* Navigation Menu Styling */
+    .items {
+        display: flex;
+        gap: 1rem;
+        margin-left: .5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .mobile-menu-toggle {
+        display: block; /* Show mobile menu button */
+    }
+
+    .button {
+        display: none; /* Hide the Get Started button on smaller screens */
+    }
+    .search-box {
+        margin-left: 4rem;
+        margin-top: 0.3rem;
+        padding-left: 2rem;
+        width: 20rem;
+        height: 40px;
+        border-radius: 50px;
+        border: 1px solid black;
+    }
+    
+    /* Navigation Menu Styling */
+    .items {
+        display: flex;
+        gap: 1rem;
+        margin-left: 2rem;
+    }
+    
+
+    .items {
+        display: none; /* Hide the desktop menu */
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: white;
+        z-index: 49;
+    }
+
+    .items.open {
+        display: block;
+        position: absolute;
+        top: 62px;
+        background-color: whitesmoke;
+        left: 50%;
+        right: 0%;
+        
+        
+        width: auto;
+        background-color: whitesmoke;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 49;
+        padding: 10px;
+      }
+
+    .items.open .item {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+}
+@media (max-width: 780px) {
+    .search-box {
+        display: none; /* Hide the search box on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .items.open {
+        left: 20%;
+    }
+}

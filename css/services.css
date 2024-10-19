@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set default font and background for body */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styles for the services section */
+  .services-section {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  /* Heading style */
+  .services-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Container for the grid layout */
+  .services-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; /* Default width for responsiveness */
+  }
+  
+  /* Service box style */
+  .service-box {
+    width: 280px;
+    height: 250px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    padding-top: .25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s ease-in-out; /* Transition for hover effect */
+  }
+  
+  /* Image and heading */
+  .service-box img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.8s ease; /* Slow movement on hover */
+  }
+  
+  .service-box h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    transition: transform 0.8s ease; /* Slow movement on hover */
+  }
+  
+  /* Description styling (Initially hidden and positioned below) */
+  .service-box .description {
+    opacity: 0;
+    transform: translateY(50px); /* Start off below the box */
+    transition: all 0.8s ease; /* Smooth transition for movement and opacity */
+    text-align: center;
+    padding: 0 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50px); /* Start from below and center horizontally */
+    width: 100%;
+    font-style: normal;
+    font-size: small;
+    text-align: justify;
+    text-justify: auto;
+    color: rgb(71, 71, 174);
+  }
+  
+  /* Hover effect to move image + heading and show description */
+  .service-box:hover .description {
+    opacity: 1;
+    transform: translate(-50%, -10%); /* Move to the exact center on hover */
+  }
+  
+  
+  
+  .service-box:hover h3 {
+    transform: translate(-27px, -50px); /* Move image and h3 to top-left corner */
+  }
+  
+  .service-box:hover img {
+    transform: translate(-100px, -60px); /* Move image and h3 to top-left corner */
+  }
+  
+  /* Responsive grid for larger screens */
+  @media (min-width: 640px) {
+    .services-container {
+      width: 80%; /* Adjust width for medium screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .services-container {
+      width: 900px; /* Fixed width for larger screens */
+    }
+  }
+

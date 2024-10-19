@@ -1,0 +1,99 @@
+.tools-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+    grid-gap: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+    column-gap: 1rem;
+    padding: 10px;
+   
+
+}
+
+.grid-item {
+    background-color: white;
+    max-width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+}
+
+.grid-item img {
+    max-width: 95%; /* Ensure the image fits inside the grid item */
+    border-radius: 5px;
+}
+
+.grid-item:hover {
+    box-shadow: 16px 20px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Slider Controls */
+.slider-controls {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+.prev-button,
+.next-button {
+    background-color: #0eb513;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 5px; /* Space around buttons */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.prev-button:hover,
+.next-button:hover {
+    background-color: #45a049;
+}
+
+/* Disabled button styles */
+.prev-button.disabled,
+.next-button.disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+
+    .title {
+        font-size: 20px; /* Slightly smaller title for small screens */
+    }
+
+    /* Adjust button sizes */
+    .prev-button, 
+    .next-button {
+        padding: 8px 16px; /* Smaller padding for buttons */
+        font-size: 0.9rem; /* Slightly smaller font */
+    }
+}
